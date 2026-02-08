@@ -1,0 +1,200 @@
+/* Login Page - Facebook Style */
+.login-container {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.login-content {
+    display: flex;
+    gap: 60px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Left Side */
+.login-left {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.facebook-logo {
+    font-size: 60px;
+    font-weight: 800;
+    color: #1877f2;
+    margin-bottom: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: -2px;
+}
+
+.facebook-tagline {
+    font-size: 28px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* Right Side - Login Form */
+.login-right {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 1px solid #cce2f5;
+    border-radius: 6px;
+    background-color: #f5f6f7;
+    color: #000;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.input-field:focus {
+    background-color: #fff;
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.1);
+}
+
+.input-field::placeholder {
+    color: #65676b;
+}
+
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 8px;
+}
+
+.login-button:hover {
+    background-color: #166fe5;
+}
+
+.login-button:active {
+    background-color: #0a66d2;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #1877f2;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+}
+
+.forgot-password:hover {
+    color: #166fe5;
+}
+
+.divider {
+    height: 1px;
+    background-color: #e5e7eb;
+    margin-bottom: 20px;
+}
+
+.signup-button {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #31a24c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.signup-button:hover {
+    background-color: #2a8f41;
+}
+
+.signup-button:active {
+    background-color: #219a3a;
+}
+
+.disclaimer {
+    font-size: 13px;
+    color: #65676b;
+    text-align: center;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .login-left {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .facebook-logo {
+        font-size: 40px;
+    }
+
+    .facebook-tagline {
+        font-size: 20px;
+    }
+
+    .login-right {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-content {
+        gap: 20px;
+    }
+
+    .facebook-logo {
+        font-size: 32px;
+    }
+
+    .facebook-tagline {
+        font-size: 18px;
+    }
+
+    .input-field {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .login-button,
+    .signup-button {
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+}
